@@ -39,6 +39,10 @@ body {
 }
 
 .hero p {
+  max-width: 300px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 10px;
   font-size: 1.2rem;
   color: #444;
   margin-bottom: 1.5rem;
