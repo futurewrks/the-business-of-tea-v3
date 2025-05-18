@@ -39,7 +39,7 @@ body {
 }
 
 .hero p {
-  max-width: 300px;
+  max-width: 720px;
   padding: 1.5rem;
   background: #f9f9f9;
   border-radius: 10px;
@@ -52,8 +52,11 @@ body {
 }
 
 .hero-img img {
+  display: block; /* Converts inline image to block-level for margin to work */
+  margin-left: auto;  /* Centers horizontally */
+  margin-right: auto;
   max-width: 720px;
-   align-items: center;
+  /* align-items: center; */
   height: auto;
 }
 
