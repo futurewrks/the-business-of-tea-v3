@@ -1,8 +1,8 @@
+/* Reset and base styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 body {
@@ -14,18 +14,17 @@ body {
 /* Hero Section */
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
   background: #fffef8;
   padding: 4rem 2rem;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: center; /* Ensure text alignment for children */
 }
 
 .hero-text {
   flex: 1;
   min-width: 280px;
-  
 }
 
 .hero h1 {
@@ -40,24 +39,28 @@ body {
 
 .hero p {
   max-width: 720px;
-  padding: 1.5rem;
+  margin: 0 auto 1.5rem; /* Center horizontally with auto margins */
+  padding: 2rem; /* Consistent padding as requested */
   background: #f9f9f9;
   border-radius: 10px;
   font-size: 1.2rem;
   color: #444;
-  margin-bottom: 1.5rem;
-  max-width: auto;
-   text-align: center;
-  padding:2rem;
+  text-align: center; /* Ensure text is centered */
+}
+
+.hero-img {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center; /* Center image horizontally */
 }
 
 .hero-img img {
-  display: block; /* Converts inline image to block-level for margin to work */
-  margin-left: auto;  /* Centers horizontally */
-  margin-right: auto;
   max-width: 720px;
-  /* align-items: center; */
+  width: 100%; /* Ensure responsiveness */
   height: auto;
+  display: block; /* Ensure block-level for margin centering */
+  margin: 0 auto; /* Center image horizontally */
 }
 
 /* CTA Button */
@@ -71,6 +74,7 @@ body {
   font-weight: bold;
   transition: background 0.3s;
 }
+
 .cta-button:hover {
   background: #1b5e20;
 }
@@ -173,79 +177,4 @@ body {
   display: inline-block;
   margin-top: 1rem;
   background: #a5d6a7;
-  color: #1b5e20;
-  padding: 0.6rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Directory Section */
-.directory {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 2rem;
-  background: #fff;
-}
-
-.company {
-  width: 200px;
-  background: #f3f3f3;
-  padding: 1rem;
-  margin: 1rem;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.company h4 {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 0.5rem;
-}
-
-.company p {
-  font-size: 0.95rem;
-}
-
-/* Insights & Advertise */
-.insights-advertise {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 3rem 2rem;
-  background: #f9f9f9;
-}
-
-.insights, .advertise {
-  flex: 1;
-  min-width: 300px;
-  padding: 1rem;
-}
-
-.insights h2, .advertise h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.insights ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-}
-
-.advertise img {
-  width: 100px;
-  border-radius: 50%;
-  margin: 0.5rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .offer-grid, .directory {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+  color: #
