@@ -23,6 +23,7 @@ body {
 .hero-text {
   flex: 1;
   min-width: 280px;
+  text-align: center;
 }
 
 .hero h1 {
