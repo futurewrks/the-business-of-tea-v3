@@ -1,82 +1,123 @@
-/* Reset and base styles */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Hero Section */
 .hero {
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  background: #fffef8;
-  padding: 4rem 2rem;
-  flex-wrap: wrap;
-  text-align: center; /* Ensure text alignment for children */
+    padding: 6rem 2rem;
+    background: #f9f9f9;
+    max-width: 1200px; /* Constrain width for larger screens */
+    margin: 0 auto; /* Center the section */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center; /* Vertically center h1 and hero-bg */
+    gap: 2rem; /* Space between text and image */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 280px;
+    flex: 1; /* Take available space */
+    min-width: 300px; /* Ensure text doesn’t get too narrow */
 }
 
 .hero h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0; /* Remove default margin */
 }
 
 .hero h1 span {
-  color: #2e7d32;
+    color: #2e7d32; /* Green accent */
 }
 
 .hero p {
-  max-width: 720px;
-  margin: 0 auto 1.5rem; /* Center horizontally with auto margins */
-  padding: 2rem; /* Consistent padding as requested */
-  background: #f9f9f9;
-  border-radius: 10px;
-  font-size: 1.2rem;
-  color: #444;
-  text-align: center; /* Ensure text is centered */
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 1rem 0 2rem; /* Space above and below */
 }
 
-.hero-img {
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  justify-content: center; /* Center image horizontally */
+.hero-bg {
+    flex: 0 0 auto; /* Don’t stretch, use natural size */
 }
 
-.hero-img img {
-  max-width: 720px;
-  width: 100%; /* Ensure responsiveness */
-  height: auto;
-  display: block; /* Ensure block-level for margin centering */
-  margin: 0 auto; /* Center image horizontally */
+.hero-bg img {
+    max-width: 640px; /* Constrain image width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove inline spacing */
 }
 
-/* CTA Button */
-.cta-button {
-  display: inline-block;
-  background: #2e7d32;
-  color: white;
-  padding: 0.75rem 2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+.hero-ctas {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start; /* Align left to match text */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-.cta-button:hover {
-  background: #1b5e20;
-  
+
+.primary-cta, .secondary-cta {
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.primary-cta {
+    background: #2e7d32;
+    color: #fff;
+}
+
+.primary-cta:hover {
+    background: #1b5e20;
+}
+
+.secondary-cta {
+    background: transparent;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+}
+
+.secondary-cta:hover {
+    background: #2e7d32;
+    color: #fff;
+}
+
+/* Responsive Design for Hero */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: flex-start; /* Align to start */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller heading on mobile */
+    }
+
+    .hero p {
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    .hero-bg img {
+        max-width: 100%; /* Full width for image */
+    }
+
+    .hero-ctas {
+        justify-content: center; /* Center buttons on mobile */
+    }
+}
+
 /* What We Offer */
 .offerings {
     padding: 4rem 2rem;
