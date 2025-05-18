@@ -41,6 +41,7 @@ body {
   color: #444;
   margin-bottom: 1.5rem;
   max-width: 500px;
+   text-align: center;
 }
 
 .hero-img img {
