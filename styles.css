@@ -44,11 +44,12 @@ body {
   margin-bottom: 1.5rem;
   max-width: auto;
    text-align: center;
+  padding:2rem;
 }
 
 .hero-img img {
   max-width: 720px;
-  
+   align-items: center;
   height: auto;
 }
 
