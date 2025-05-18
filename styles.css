@@ -74,96 +74,68 @@ body {
   font-weight: bold;
   transition: background 0.3s;
 }
-
 .cta-button:hover {
   background: #1b5e20;
-}
-
-/* Offer Section */
+  
+}/* Offer Section */
 .offer {
   text-align: center;
   padding: 4rem 2rem;
   background: #fff;
-}
-
-.offer h2 {
+}.offer h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 2rem;
-}
-
-.offer-grid {
+}.offer-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-}
-
-.offer-card {
+}.offer-card {
   max-width: 300px;
   padding: 1.5rem;
   background: #f9f9f9;
   border-radius: 10px;
   text-align: center;
-}
-
-.offer-card img {
+}.offer-card img {
   width: 90px;
   margin-bottom: 1rem;
-}
-
-.offer-card h3 {
+}.offer-card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-}
-
-.offer-card p {
+}.offer-card p {
   font-size: 1rem;
   margin-bottom: 1rem;
-}
-
-.offer-card a {
+}.offer-card a {
   color: #2e7d32;
   text-decoration: none;
   font-weight: bold;
-}
-
-/* Lead Magnet */
+}/* Lead Magnet */
 .lead-magnet {
   background: #2e7d32;
   color: #fff;
   padding: 3rem 2rem;
   text-align: center;
-}
-
-.lead-magnet h2 {
+}.lead-magnet h2 {
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1rem;
-}
-
-.lead-magnet p {
+}.lead-magnet p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-}
-
-.lead-magnet form {
+}.lead-magnet form {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
-}
-
-.lead-magnet input {
+}.lead-magnet input {
   padding: 0.75rem;
   font-size: 1rem;
   width: 300px;
   border: none;
   border-radius: 5px;
-}
-
-.lead-magnet button {
+}.lead-magnet button {
   padding: 0.75rem 2rem;
   background: #fff;
   color: #2e7d32;
@@ -171,10 +143,64 @@ body {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.directory-button {
+}.directory-button {
   display: inline-block;
   margin-top: 1rem;
   background: #a5d6a7;
-  color: #
+  color: #1b5e20;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  
+}/* Directory Section */
+.directory {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #fff;
+}.company {
+  width: 200px;
+  background: #f3f3f3;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}.company h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5rem;
+}.company p {
+  font-size: 0.95rem;
+}/* Insights & Advertise */
+.insights-advertise {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+}.insights, .advertise {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+}.insights h2, .advertise h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}.insights ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}.advertise img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 0.5rem;
+}/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .offer-grid, .directory {
+    flex-direction: column;
+    align-items: center;
+  }
+
