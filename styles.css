@@ -43,8 +43,8 @@ body {
 }
 
 .hero-img img {
-  max-width: 1000px;
-  width: 100%;
+  max-width: 640px;
+  
   height: auto;
 }
 
